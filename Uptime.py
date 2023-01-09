@@ -1,5 +1,5 @@
 import requests as req
-import 
+import time as t 
 
 url = input("Enter the URL to be checked in the format https://www.examplewebsite.com or http://www.examplewebsite.com \n")
 
