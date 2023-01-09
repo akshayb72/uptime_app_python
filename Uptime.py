@@ -1,20 +1,22 @@
 import requests as req
+import 
 
 url = input("Enter the URL to be checked in the format https://www.examplewebsite.com or http://www.examplewebsite.com \n")
 
-c = 1
 
-while (c!=0):
+
+while True:
 
     res =req.get(url)
 
     print(res)
     if(res.status_code == 200):
         print("Site is UP")
-        c = 0
+        print(f"The Response code is {res.status_code}")
         pass
 
     else:
         print("Site is Down")
-        c = 0
+        print(f"The Response code is {res.status_code}")
         pass
+    t.sleep(5)
